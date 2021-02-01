@@ -1,4 +1,4 @@
-import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import { createMuiTheme, ThemeProvider ,NoSsr} from '@material-ui/core';
 import '../styles/globals.css'
 
 const theme = createMuiTheme({
@@ -20,9 +20,10 @@ const theme = createMuiTheme({
 });
 
 function MyApp({ Component, pageProps }) {
-  return <ThemeProvider theme={theme}>
+  return <NoSsr> <ThemeProvider theme={theme}>
 <Component {...pageProps} />
   </ThemeProvider>
+  </NoSsr>
 }
 
 export default MyApp
