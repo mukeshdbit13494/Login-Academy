@@ -21,14 +21,14 @@ const courses = [
         imgUrl: "/computer-app.svg",
         courseDescription: ["Include of CCA", "Adobe photoshop", "Adobe Pagemaker", "Basic Tally Accounting"],
         courseDuraton: "6",
-        fees: "3000"
+        fees: "6500"
     },
     {
         courseName: "Certificate in Computer Application (CCA)",
         imgUrl: "/dev.svg",
         courseDescription: ["Fundamental of Computer", "Windows Overvew", "E-mail And Internet", "Virus", "Applcaton Software0", "Typping (Englsh+Nepali)"],
         courseDuraton: "6",
-        fees: "6000"
+        fees: "3500"
 
     },
     {
@@ -55,7 +55,7 @@ function HomeCourses(props) {
                 ))}
             </Grid>
             <div className={classes.btnMore}>
-                <Button onClick={() => router.push("/courses")} variant="outlined" endIcon={<ArrowForward  />}>More Courses</Button>
+                <Button onClick={() => router.push("/courses")} variant="outlined" endIcon={<ArrowForward />}>More Courses</Button>
             </div>
         </Grid>
 
