@@ -22,16 +22,16 @@ const courses = [
     {
         courseName: "Typping(Eng/Nep)",
         courseDuraton: "1",
-        fees: "1500",
+        fees: "2000",
     },
     {
         courseName: "UniCode",
-        courseDuraton: "15",
-        fees: "1500",
+        courseDuraton: "1",
+        fees: "2000",
     }, {
         courseName: "Application Software",
         courseDuraton: "2",
-        fees: "2000",
+        fees: "2500",
     },
     {
         courseName: "Microsoft Word",
@@ -55,23 +55,23 @@ const courses = [
     },
     {
         courseName: "PHP serverside",
-        courseDuraton: "3",
+        courseDuraton: "2",
         fees: "5000",
     },
     {
         courseName: "JSP serverside",
-        courseDuraton: "3",
+        courseDuraton: "2",
         fees: "5000",
     },
     {
         courseName: "ASP serverside",
-        courseDuraton: "3",
+        courseDuraton: "2",
         fees: "5000",
     },
     {
         courseName: "Adobe Photoshop",
         courseDuraton: "2",
-        fees: "3500",
+        fees: "4500",
     },
     {
         courseName: "Adobe Pagemaker",
@@ -106,7 +106,7 @@ const courses = [
     {
         courseName: "Android",
         courseDuraton: "6",
-        fees: "9000",
+        fees: "10000",
     },
     {
         courseName: "Ios",
@@ -171,7 +171,7 @@ const courses = [
     {
         courseName: "Tally Accounting",
         courseDuraton: "3",
-        fees: "4500",
+        fees: "6500",
     },
     {
         courseName: "FACT Accounting",
@@ -186,7 +186,7 @@ const courses = [
     {
         courseName: "AutoCad",
         courseDuraton: "2",
-        fees: "6000",
+        fees: "8000",
     },
     {
         courseName: "Spoken English (Complete)",
@@ -195,8 +195,8 @@ const courses = [
     },
     {
         courseName: "Spoken English",
-        courseDuraton: "20",
-        fees: "1500",
+        courseDuraton: "2",
+        fees: "3000",
     },
 ]
 
@@ -204,19 +204,19 @@ function IndividualCard(props) {
     const classes = useStyles();
     return (
         <div className={classes.ourCourses}>
-          
-            
+
+
             <Grid>
                 <Grid container >
                     {courses.map((item) => (
                         <Grid item xs={12} sm={3} key={item.courseName}>
-                            <CardIndividual data={item}  />
+                            <CardIndividual data={item} />
                         </Grid>
                     ))}
                 </Grid>
             </Grid>
-       
-</div>
+
+        </div>
 
 
     )

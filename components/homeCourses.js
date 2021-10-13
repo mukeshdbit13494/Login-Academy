@@ -36,7 +36,7 @@ const courses = [
         imgUrl: "/web-design.svg",
         courseDescription: ["Include of CCA", "HTML5+CSS3+JS", "PHP/JSP/ASP", "CMS (WP/JUMLA)", "6 month Free (1 Domain+Hosting)"],
         courseDuraton: "6",
-        fees: "8000"
+        fees: "12000"
     }
 
 ]

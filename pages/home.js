@@ -30,11 +30,11 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 80,
 
     textAlign: "center",
-    [theme.breakpoints.down('sm')]:{
-    paddingLeft: 20,
-    paddingRight: 20,
-    paddingTop: 20,
-    paddingBottom: 40,
+    [theme.breakpoints.down('sm')]: {
+      paddingLeft: 20,
+      paddingRight: 20,
+      paddingTop: 20,
+      paddingBottom: 40,
     }
   },
   ourCourses: {
@@ -43,11 +43,11 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 60,
     paddingBottom: 80,
     backgroundColor: "#f5f5f5",
-    [theme.breakpoints.down('sm')]:{
+    [theme.breakpoints.down('sm')]: {
       paddingLeft: 20,
-    paddingRight: 20,
-    paddingTop: 20,
-    paddingBottom: 40,
+      paddingRight: 20,
+      paddingTop: 20,
+      paddingBottom: 40,
     }
 
   },
@@ -56,11 +56,11 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 50,
     paddingTop: 60,
     paddingBottom: 80,
-[theme.breakpoints.down('sm')]:{
+    [theme.breakpoints.down('sm')]: {
       paddingLeft: 20,
-    paddingRight: 20,
-    paddingTop: 20,
-    paddingBottom: 40,
+      paddingRight: 20,
+      paddingTop: 20,
+      paddingBottom: 40,
     }
 
   },
@@ -71,21 +71,21 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 80,
     backgroundColor: "#f5f5f5",
     textAlign: "center",
-    [theme.breakpoints.down('sm')]:{
+    [theme.breakpoints.down('sm')]: {
       paddingLeft: 20,
-    paddingRight: 20,
-    paddingTop: 20,
-    paddingBottom: 40,
+      paddingRight: 20,
+      paddingTop: 20,
+      paddingBottom: 40,
     }
   },
   heading: {
     textAlign: "center",
-    marginBottom:30,
+    marginBottom: 30,
     textTransform: "uppercase",
     color: theme.palette.secondary.main,
-    [theme.breakpoints.down('sm')]:{
-      fontSize:'1em',
-      marginBottom:30,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1em',
+      marginBottom: 30,
     }
   }
 }));
@@ -107,8 +107,9 @@ function Home() {
 
         <div className={classes.ourCourses}>
           <h1 className={classes.heading}>Our Courses</h1>
-            <Divider />
+          <Divider />
           <HomeCourses />
+
         </div>
 
         <div className={classes.onAcademy}>
@@ -118,7 +119,7 @@ function Home() {
         </div>
         <div className={classes.contactUs}>
           <h1 className={classes.heading}>Contact Us
-        </h1>
+          </h1>
           <Divider />
 
           <ContactUs />
